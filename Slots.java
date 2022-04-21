@@ -27,7 +27,7 @@ class Slots{
         bet = 0;
         System.out.format("[+] Enter a bet between 1-%d: ",totalCredits);
         bet = sc.nextInt();
-        if (bet > totalCredits){System.out.println("Invalid Input!");}
+        if (bet > totalCredits || bet == 0){System.out.println("Invalid Input!");}
         else{
             boolean didWin = winOrLose();
             if (didWin){addBalance();}
